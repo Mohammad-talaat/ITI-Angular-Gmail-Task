@@ -7,13 +7,15 @@ import { PromotionTabComponent } from './components/promotion-tab/promotion-tab.
 import { SocialTabComponent } from './components/social-tab/social-tab.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialUIModule } from './material-UI-module/material-ui.module';
+import { TableComponent } from './components/table/table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrimaryTabComponent,
     PromotionTabComponent,
-    SocialTabComponent
+    SocialTabComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,

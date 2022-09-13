@@ -1,13 +1,57 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>Gmail</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
-</mat-toolbar>
+  <mat-toolbar>
+    <button (click)="isSideNavOpened=!isSideNavOpened" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Gmail</span>
+    <span class="example-spacer"></span>
+    <mat-form-field appearance="fill">
+      <!-- <mat-label>Search mail</mat-label> -->
+      <mat-icon style="margin-right: 5px;">search</mat-icon>
+      <input  matInput placeholder="Search mail">
+    </mat-form-field>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer class="example-sidenav" mode="side" opened>
+      <!-- Start of the side nav icons -->
+          <!-- Start of Icon 1 -->
+          <div class="icon-div">
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <span *ngIf="isSideNavOpened">dradsfawerasdfasf</span>
+          </div>
+          <!-- End of Icon 1 -->
+
+          <!-- Start of Icon 2 -->
+          <div class="icon-div">
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <span *ngIf="isSideNavOpened">drawer</span>
+          </div>
+          <!-- End of Icon 2 -->
+
+          <!-- Start of Icon 3 -->
+          <div class="icon-div">
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <span *ngIf="isSideNavOpened">drawer</span>
+          </div>
+          <!-- End of Icon 3 -->
+
+
+
+
+
+
+
+      <!-- End   of the side nav icons -->
+    </mat-drawer>
+    <mat-drawer-content>Main content</mat-drawer-content>
+  </mat-drawer-container>
+

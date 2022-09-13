@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-gmail-task-4';
+  isSideNavOpened:boolean = false;
 }
