@@ -27,17 +27,20 @@ mat-form-field{
 }
 
 .example-sidenav {
-  padding: 20px;
-  overflow-y: visible;
-
+  padding: 10px;
+  overflow: hidden;
 }
 
+
 .icon-div{
-  margin-right:20px;
+  margin-right:10px;
   display: flex;
-  flex-wrap: nowrap;
   justify-content: start;
   align-items: center;
   cursor: pointer;
+}
 
+.categories-icons{
+  position:relative;
+  left:10px;
 }
